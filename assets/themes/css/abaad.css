@@ -6193,6 +6193,14 @@ margin-right: 30%;
     .text-service p{
         font-size: 10px
     }
+    .aboutus-text p:last-of-type{
+        font-size: 12px;
+    }
+}
+@media (min-width:451px) and (max-width:750px){
+    .clients-logo img{
+        width: 100px;
+    }
 }
 .text-service{
     padding-bottom: 20px;
@@ -6438,7 +6446,6 @@ margin-right: 30%;
     visibility: hidden
 }
 
-#clients.remove {}
 
 #gallery.remove {
     visibility: hidden
@@ -7254,6 +7261,7 @@ margin-right: 30%;
     .aboutus-text {
         width: 95%;
         font-size: 112%;
+        margin-bottom: 100px;
     }
 
     .partners {
