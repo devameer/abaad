@@ -6189,11 +6189,14 @@ margin-right: 30%;
     }
     .text-service{
         width: 100%;
-        padding-bottom: 20px;
     }
     .text-service p{
         font-size: 10px
     }
+}
+.text-service{
+    padding-bottom: 20px;
+
 }
 .set1 {
     margin-right: 30%;
