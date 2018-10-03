@@ -259,8 +259,12 @@
     text-align: center;
     width: 95%;
 }
+.text-service h3{
+    font-size: 25px;
+}
 .text-service p{
-    color: #fff
+    color: #fff;
+    font-size: 15px;
 }
 .banner-navigation #prev {
     position: absolute;
@@ -6544,7 +6548,6 @@ margin-right: 30%;
 #aboutus-content .container {
     position: relative;
     z-index: 3;
-    top: 100px
 }
 
 #clients-content .container {
@@ -7394,17 +7397,24 @@ margin-right: 30%;
 @media (min-width:991px) {
     .flexslider .slides iframe
     {
-        height: calc(315px * 2);
-        width: calc(560px * 2)
+        height: calc(315px * 1.6);
+        width: calc(560px * 1.6)
     }
-    .flexslider{
-        width: calc(560px * 2);
+    .flexslider:first-child{
+        width: calc(560px * 1.6);
+        margin: auto;
+        height: calc(315px * 1.6);
+
+
+    }
+    .flexslider:last-child{
+        width: calc(560px * 1.6);
         margin: auto;
 
     }
     
     .flexslider .slides > li .youtube-big-image{
-        height: calc(315px * 2);
+        height: calc(315px * 1.6);
         width: 100%
 
     } 
@@ -7494,6 +7504,16 @@ margin-right: 30%;
     .contacts-list-page p{
         font-size: 14px;
     }
+    .aboutus-artboard-bg{
+        height: 100%;
+    }
+    .aboutus-artboard-bg img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover
+    }
+}
+@media(max-width:991px){
     .aboutus-artboard-bg{
         height: 100%;
     }
@@ -7741,7 +7761,7 @@ margin-right: 30%;
     font-weight: bold;
 }
 .home-text h4{
-    font-size: 25px;
+    font-size: 20px;
     color: #fff;
     font-weight: 400;
 }
