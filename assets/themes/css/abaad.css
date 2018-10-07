@@ -5866,7 +5866,7 @@ label {
 #nav {
     position: fixed;
     top: 0;
-    right: 0;
+    right: 5px;
     z-index: 999;
     height: 100%;
     display: -webkit-flex;
@@ -5948,44 +5948,54 @@ label {
 }
 
 #nav span {
-    flex: 1;
-    border-right: 10px solid;
+    /* flex: 1;
+    border: 10px solid;
     color: rgba(59, 94, 121, 1);
     position: relative;
-    z-index: 1
+    z-index: 1; */
+    height: 15px;
+    display: block;
+    width: 15px;
+    background: #ccc;
+    border-radius: 50%;
+    margin-bottom: 14px;
+}
+#nav strong{
+    top: -8px !important;
+    right: 12px !important;
 }
 
 #nav .nav-1 {
-    border-right-color: rgb(68, 68, 68)
+    background: rgb(68, 68, 68)
 }
 
 #nav span.nav-2 {
-    border-right-color: rgb(68, 68, 68)
+    background: rgb(68, 68, 68)
 }
 
 #nav span.nav-3 {
-    border-right-color: rgb(85, 85, 85);
+    background: rgb(85, 85, 85);
 }
 
 #nav span.nav-4 {
-    border-right-color: rgb(102, 102, 102);
+    background: rgb(102, 102, 102);
 }
 
 #nav span.nav-5 {
-    border-right-color: rgb(169, 169, 169);
+    background: rgb(169, 169, 169);
 }
 
 #nav span.nav-6 {
-    border-right-color: rgb(221, 221, 221);
+    background: rgb(221, 221, 221);
 }
 
 #nav span.nav-7 {
-    border-right-color: rgb(238, 238, 238);
+    background: rgb(238, 238, 238);
 }
 
 #nav .nav-8 {
-    border-right-color: rgb(169, 169, 169);
-}
+    background: rgb(169, 169, 169);
+} 
 
 #nav strong {
     padding-right: 1em;
@@ -7455,6 +7465,7 @@ margin-right: 30%;
     text-align: center;
     color: #fff;
     line-height: 35px;
+    height: 100vh;
 }
 
 .contact-us {
@@ -7485,6 +7496,7 @@ margin-right: 30%;
 .contacts-list-page p {
     text-align: center;
     font-size: 15px;
+    color: #fff
 }
 
 .social-list {
@@ -7852,3 +7864,31 @@ overflow: hidden;
     border-bottom-color: transparent
 }
 
+/* 
+.dots{
+    position: fixed;
+    top: 50% !important;
+    right: 30px !important;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    list-style: none;  
+    padding: 20px 10px;
+    z-index: 10000000;
+  
+  }
+  
+  .dots a{
+    width: 13px;
+    height: 13px;
+    border: 2px solid #A2ECF3;
+    margin-bottom: 17px;
+    border-radius: 50%
+  }
+  #nav a.active{
+    background:#A2ECF3;
+  }
+ */
