@@ -6013,7 +6013,7 @@ label {
     position: absolute;
     top: 0;
     right: 0;
-    min-width: 150px
+    min-width: 270px
 }
 
 #nav.top-page li.default strong,
@@ -7892,3 +7892,26 @@ overflow: hidden;
     background:#A2ECF3;
   }
  */
+@media(min-width:1200px){
+    #nav li{
+        margin-top: 10px;
+    }
+    #clients-content {
+       
+        height: 100vh;
+    }
+    #aboutus-content.space-top{
+        margin-top: 0;
+}
+#aboutus.padding{
+    padding: 0;
+}
+
+}
+@media(min-width:1500px){
+
+
+    .aboutus-text p:last-of-type{
+        font-size: 25px;
+    }
+}
