@@ -6700,7 +6700,7 @@ jQuery(document).ready(function ($) {
     });
     var reveal_services = $('.has-services #services-wrapper').waypoint({
         handler: function (direction) {
-            $('.showcase-black-bg').toggleClass('show');
+            // $('.showcase-black-bg').toggleClass('show');
             $('#services-wrapper').toggleClass('active');
         }, offset: '50%'
     });
@@ -6708,7 +6708,7 @@ jQuery(document).ready(function ($) {
 
     var reveal_aboutus = $('.has-aboutus #aboutus').waypoint({
         handler: function (direction) {
-            $('.showcase-black-bg').toggleClass('show');
+            // $('.showcase-black-bg').toggleClass('show');
             $('#aboutus').toggleClass('active');
         }, offset: '50%'
     });
@@ -6724,7 +6724,7 @@ jQuery(document).ready(function ($) {
         handler: function (direction) {
             $('.showcase-black-bg').toggleClass('show');
             $('#clients').toggleClass('active');
-        }, offset: '00%'
+        }, offset: '50%'
     });
 
     var reveal_footer = $('.has-footer #footer').waypoint({
@@ -6735,11 +6735,11 @@ jQuery(document).ready(function ($) {
     });
 
 
-    var end_services = $('.has-services #footer').waypoint({
-        handler: function (direction) {
-            $('.showcase-black-bg').toggleClass('show');
-        }, offset: '120%'
-    });
+    // var end_services = $('.has-services #footer').waypoint({
+    //     handler: function (direction) {
+    //         $('.showcase-black-bg').toggleClass('show');
+    //     }, offset: '120%'
+    // });
     var remove_services = $('.has-services #hide-services').waypoint({
         handler: function (direction) {
             $('#services-wrapper').toggleClass('remove');
@@ -7582,3 +7582,43 @@ $(window).scroll(function() {
 				}
 		});
 }).scroll();
+
+$(function(){
+    $('.language-buttons a.active').on('click',function(e){
+        e.preventDefault();
+    })
+});
+
+
+
+
+$(function() {
+
+    var youtube = $(".youtube-video" );
+    
+    
+    
+    for (var i = 0; i < youtube.length; i++) {
+        
+        var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/sddefault.jpg";
+        
+        var image = new Image();
+                image.src = source;
+                image.addEventListener( "load", function() {
+                    youtube[ i ].appendChild( image );
+                }( i ) );
+        
+                youtube[i].addEventListener( "click", function() {
+    
+                    var iframe = document.createElement( "iframe" );
+    
+                            iframe.setAttribute( "frameborder", "0" );
+                            iframe.setAttribute( "allowfullscreen", "" );
+                            iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
+    
+                            this.innerHTML = "";
+                            this.appendChild( iframe );
+                } );	
+    };
+    
+    } )();
